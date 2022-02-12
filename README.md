@@ -1,3 +1,6 @@
 # CO Cup repo
 
-anyone who has managed to find this repo well done this will not help you with the answers it will only help me with the setup jokes on you
+brief
+i really bad web developer has tried to make there new company a website but are having issues the technical friend has left a list of steps to help fix the site.
+
+can you find the name of the friend and login to the site to get the flag he left behind
