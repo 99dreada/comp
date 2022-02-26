@@ -1,80 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>CO Cup</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <script src="jquery.js"></script>
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-    </style>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="ico/favicon.png">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
   </head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="index.html">10 Sigs CO Cup Cyber</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="https://192.168.1.135" target="_blank" rel="noopener noreferrer">Scoreboard</a></li>
-              <li class="active"><a href="questions.html">Questions</a></li>
-              <li><a href="faq.html">FAQs</a></li>
-              <li><a href="downloads.html">Downloads</a></li>
-              <li><a href="https://192.168.1.229" target="_blank" rel="noopener noreferrer">VPN</a></li>
-              <li><a href="about.html">About</a></li>
-            </ul>
-          </div>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">10 Sigs CO Cup Cyber</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://192.168.1.135" target="_blank" rel="noopener noreferrer">Scoreboard</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="questions.html">Questions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="downloads.html">Downloads</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://192.168.1.229" target="_blank" rel="noopener noreferrer">VPN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="hero-unit">
-        <h1>Web Questions</h1>
-        <p>All question with the question code starting WS the pages needed are linked below.</p>
-        <hr>
-        <ul>
-        <li><a href="http://192.168.1.141" target="_blank" rel="noopener noreferrer">WS01</a></li>
-        <li><a href="http://192.168.1.142" target="_blank" rel="noopener noreferrer">WS02</a></li>
-        <li><a href="http://192.168.1.143" target="_blank" rel="noopener noreferrer">WS03</a></li>
-        <li><a href="http://192.168.1.144" target="_blank" rel="noopener noreferrer">WS04</a></li>
-        <li><a href="http://192.168.1.145" target="_blank" rel="noopener noreferrer">WS05</a></li>
-        </ul>
-      </div>
-      <hr>
-      <footer>
-        <p style="color:white">well done flag is: Par For the Course</p>
-      </footer>
-    </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
+      </nav>
+    </header>
+    <body>
+      <main role="main" class="container">
+        <div class="jumbotron">
+          <h1>Web Questions</h1>
+          <p>All question with the question code starting WS the pages needed are linked below.</p>
+          <hr>
+          <ul>
+            <li><a href="http://192.168.1.141" target="_blank" rel="noopener noreferrer">WS01</a></li>
+            <li><a href="http://192.168.1.142" target="_blank" rel="noopener noreferrer">WS02</a></li>
+            <li><a href="http://192.168.1.143" target="_blank" rel="noopener noreferrer">WS03</a></li>
+            <li><a href="http://192.168.1.144" target="_blank" rel="noopener noreferrer">WS04</a></li>
+            <li><a href="http://192.168.1.145" target="_blank" rel="noopener noreferrer">WS05</a></li>
+          </ul>
+        </div>
+      </main>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
