@@ -1,86 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>CO Cup</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <script src="jquery.js"></script>
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-    </style>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="ico/favicon.png">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
   </head>
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="index.html">10 Sigs CO Cup Cyber</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="https://192.168.1.135" target="_blank" rel="noopener noreferrer">Scoreboard</a></li>
-              <li><a href="questions.html">Questions</a></li>
-              <li><a href="faq.html">FAQs</a></li>
-              <li class="active"><a href="downloads.html">Downloads</a></li>
-              <li><a href="https://192.168.1.229" target="_blank" rel="noopener noreferrer">VPN</a></li>
-              <li><a href="about.html">About</a></li>
-            </ul>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="index.html">10 Sigs CO Cup Cyber</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://192.168.1.135" target="_blank" rel="noopener noreferrer">Scoreboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="questions.html">Questions</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="downloads.html">Downloads</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://192.168.1.229" target="_blank" rel="noopener noreferrer">VPN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <body>
+      <main role="main" class="container">
+        <div class="jumbotron">
+          <h1>Download links</h1>
+          <h3>All of the below are already setup on competition laptops.</h3>
+          <hr>
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    VMs
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  <li><a href="downloads/VMware-workstation-full-16.2.2-19200509.exe" download>VMware</a></li>
+                  <li><a href="downloads/kali-linux-2022.1-virtualbox-amd64.ova" download>Kali VM</a></li>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Digital Forensics
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <h4>Evidence</h4>
+                  <li><a href="downloads/Laptop Image.7z" download>Evidence file</a></li>
+                  <h4>Tools</h4>
+                  <li><a href="downloads/autopsy-4.19.3-64bit.msi" download>Autopsy</a></li>
+                  <li><a href="downloads/AccessData_FTK_Imager_4.7.1.exe" download>Access Data FTK</a></li>
+                  <li><a href="downloads/ophcrack-3.7.0-bin.zip" download>Ophcrack</a></li>
+                  <li><a href="downloads/RegRipper3.0-master.zip" download>Reg Ripper</a></li>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Other Software
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  <li><a href="downloads/7z2107-x64.exe" download>7Zip</a></li>
+                  <li><a href="downloads/CiscoPacketTracer_801_Windows_64bit_setup.exe" download>Packet Tracer</a></li>
+                  <li><a href="downloads/Wireshark-win64-3.6.2.exe" download>Wire Shark</a></li>
+                  <li><a href="downloads/WinSCP-5.19.5-Setup.exe" download>Win SCP</a></li>
+                  <li><a href="downloads/putty-64bit-0.76-installer.msi" download>Putty</a></li>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="hero-unit">
-        <h1>Download links</h1>
-        <h3>All of the below are already setup on competition laptops.</h3>
-        <h4>VMs</h4>
-        <li><a href="downloads/VMware-workstation-full-16.2.2-19200509.exe" download>VMware</a></li>
-        <li><a href="downloads/kali-linux-2022.1-virtualbox-amd64.ova" download>Kali VM</a></li>
-        <hr>
-        <h4>Digital Forensics Evidence</h4>
-        <li><a href="downloads/Laptop Image.7z" download>Evidence file</a></li>
-        <h4>Digital Forensics Tools</h4>
-        <li><a href="downloads/autopsy-4.19.3-64bit.msi" download>Autopsy</a></li>
-        <li><a href="downloads/AccessData_FTK_Imager_4.7.1.exe" download>Access Data FTK</a></li>
-        <li><a href="downloads/ophcrack-3.7.0-bin.zip" download>Ophcrack</a></li>
-        <li><a href="downloads/RegRipper3.0-master.zip" download>Reg Ripper</a></li>
-        <h4>Other Tools</h4>
-        <li><a href="downloads/7z2107-x64.exe" download>7Zip</a></li>
-        <li><a href="downloads/CiscoPacketTracer_801_Windows_64bit_setup.exe" download>Packet Tracer</a></li>
-        <li><a href="downloads/Wireshark-win64-3.6.2.exe" download>Wire Shark</a></li>
-        <li><a href="downloads/WinSCP-5.19.5-Setup.exe" download>Win SCP</a></li>
-        <li><a href="downloads/putty-64bit-0.76-installer.msi" download>Putty</a></li>
-      </div>
-      <hr>
-    </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
+      </main>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
